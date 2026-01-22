@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.controller.UserListController"
+            prefWidth="700" prefHeight="450">
+
+    <Label text="Liste des utilisateurs" layoutX="260" layoutY="20"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="tableUsers" layoutX="30" layoutY="60" prefWidth="640" prefHeight="330">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="colNom" text="Nom" prefWidth="150"/>
+            <TableColumn fx:id="colRole" text="Rôle" prefWidth="100"/>
+            <TableColumn fx:id="colLogin" text="Login" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <Button text="Ajouter" layoutX="30" layoutY="400" onAction="#addUser"/>
+    <Button text="Modifier" layoutX="130" layoutY="400" onAction="#editUser"/>
+    <Button text="Supprimer" layoutX="230" layoutY="400" onAction="#deleteUser"/>
+    <Button text="Retour" layoutX="580" layoutY="400" onAction="#back"/>
+</AnchorPane>

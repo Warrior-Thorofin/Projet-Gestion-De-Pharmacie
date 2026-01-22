@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500" prefWidth="800" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CommandeFormController">
+
+    <!-- TITRE -->
+    <Label layoutX="280" layoutY="20" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Ajouter / Modifier Commande" />
+
+    <!-- FORM COMMANDE -->
+    <VBox layoutX="30" layoutY="60" spacing="10">
+
+        <HBox spacing="22.0">
+            <Label text="ID Commande:" />
+            <TextField fx:id="idCommandeField" prefWidth="150" />
+        </HBox>
+
+        <HBox spacing="22.0">
+            <Label text="Fournisseur ID:" />
+            <TextField fx:id="idFournisseurField" prefWidth="150" />
+        </HBox>
+
+        <HBox spacing="61.0">
+            <Label text="User ID:" />
+            <TextField fx:id="idUserField" prefHeight="26.0" prefWidth="151.0" />
+        </HBox>
+
+        <HBox spacing="10.0">
+            <Label text="Date Commande:" />
+            <DatePicker fx:id="dateCmdPicker" />
+        </HBox>
+
+        <HBox spacing="36.0">
+            <Label text="Date Prévue:" />
+            <DatePicker fx:id="datePrevuPicker" />
+        </HBox>
+
+        <HBox spacing="38.0">
+            <Label text="Date Réelle:" />
+            <DatePicker fx:id="dateReelPicker" />
+        </HBox>
+
+    </VBox>
+
+    <!-- TABLE LIGNE COMMANDE -->
+    <TableView fx:id="tableLignes" layoutX="400" layoutY="60" prefHeight="300" prefWidth="370">
+        <columns>
+            <TableColumn fx:id="colIdProduit" prefWidth="80" text="Produit ID" />
+            <TableColumn fx:id="colQuantite" prefWidth="80" text="Quantité" />
+            <TableColumn fx:id="colPrixUnitaire" prefWidth="100" text="Prix Unitaire" />
+        </columns>
+    </TableView>
+
+    <!-- BOUTONS -->
+    <Button layoutX="400" layoutY="370" onAction="#addLigne" text="Ajouter Produit" />
+    <Button layoutX="520" layoutY="370" onAction="#deleteLigne" text="Supprimer Produit" />
+    <Button layoutX="600" layoutY="430" onAction="#handleCancel" text="Annuler" />
+    <Button layoutX="700" layoutY="430" onAction="#handleSave" style="-fx-font-weight: bold;" text="Sauvegarder" />
+</AnchorPane>

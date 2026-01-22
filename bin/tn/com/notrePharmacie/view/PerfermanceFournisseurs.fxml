@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550" prefWidth="900" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PerformanceFournisseurController">
+
+    <Label layoutX="270" layoutY="20" style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Performance des Fournisseurs" />
+
+    <!-- TABLE -->
+    <TableView fx:id="perfTable" layoutX="50" layoutY="80" prefHeight="400" prefWidth="800">
+        <columns>
+            <TableColumn fx:id="colFournisseur" prefWidth="150" text="Fournisseur" />
+            <TableColumn fx:id="colCmd" prefWidth="120" text="Nbr Commandes" />
+            <TableColumn fx:id="colRetard" prefWidth="160" text="Retard moyen (jours)" />
+            <TableColumn fx:id="colScore" prefWidth="120" text="Rang" />
+        </columns>
+    </TableView>
+
+</AnchorPane>
