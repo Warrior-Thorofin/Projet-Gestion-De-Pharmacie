@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="280" prefWidth="400" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.com.notrePharmacie.model.controller;.ProduitModifierController">
+
+    <Label layoutX="130" layoutY="20" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Modifier Produit" />
+
+    <Label layoutX="50" layoutY="70" text="ID :" />
+    <TextField fx:id="idField" editable="false" layoutX="150" layoutY="65" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="110" text="Nom :" />
+    <TextField fx:id="nomField" layoutX="150" layoutY="105" prefWidth="200" />
+
+    <Label layoutX="50" layoutY="150" text="Quantité :" />
+    <TextField fx:id="quantiteField" layoutX="150" layoutY="145" prefWidth="200" />
+
+    <Button fx:id="annulerBtn" layoutX="150" layoutY="210" onAction="#annuler" text="Annuler" />
+    <Button fx:id="updateBtn" layoutX="240" layoutY="210" onAction="#sauvgarder" style="-fx-font-weight: bold;" text="Enregistrer" />
+
+</AnchorPane>

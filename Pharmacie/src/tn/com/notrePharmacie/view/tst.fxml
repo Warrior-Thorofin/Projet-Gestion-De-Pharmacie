@@ -21,7 +21,7 @@
         <Label layoutX="221.0" layoutY="170.0" text="Password" />
         <PasswordField fx:id="passwordField" layoutX="306.0" layoutY="166.0" promptText="mot de passe" />
 
-        <Label fx:id="errorLabel" layoutX="260.0" layoutY="294.0" text="Login incorrect" textFill="red" visible="true" />
+        <Label fx:id="errorLabel" layoutX="260.0" layoutY="294.0" text="Login incorrect" textFill="red" visible="false" />
 
         <Button layoutX="266.0" layoutY="238.0" onAction="#login" prefHeight="26.0" prefWidth="65.0" text="Login" />
     </children>

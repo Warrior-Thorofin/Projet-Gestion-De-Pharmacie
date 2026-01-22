@@ -18,35 +18,23 @@
     <!-- FORM COMMANDE -->
     <VBox layoutX="30" layoutY="60" spacing="10">
 
-        <HBox spacing="22.0">
-            <Label text="ID Commande:" />
-            <TextField fx:id="idCommandeField" prefWidth="150" />
-        </HBox>
+        <HBox spacing="22.0" />
 
         <HBox spacing="22.0">
             <Label text="Fournisseur ID:" />
             <TextField fx:id="idFournisseurField" prefWidth="150" />
         </HBox>
 
-        <HBox spacing="61.0">
-            <Label text="User ID:" />
-            <TextField fx:id="idUserField" prefHeight="26.0" prefWidth="151.0" />
-        </HBox>
+        <HBox spacing="61.0" />
 
-        <HBox spacing="10.0">
-            <Label text="Date Commande:" />
-            <DatePicker fx:id="dateCmdPicker" />
-        </HBox>
+        <HBox spacing="10.0" />
 
         <HBox spacing="36.0">
             <Label text="Date Prévue:" />
             <DatePicker fx:id="datePrevuPicker" />
         </HBox>
 
-        <HBox spacing="38.0">
-            <Label text="Date Réelle:" />
-            <DatePicker fx:id="dateReelPicker" />
-        </HBox>
+        <HBox spacing="38.0" />
 
     </VBox>
 

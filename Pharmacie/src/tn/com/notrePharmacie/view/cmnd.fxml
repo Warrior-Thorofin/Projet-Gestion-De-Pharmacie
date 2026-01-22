@@ -17,11 +17,11 @@
         <columns>
             <TableColumn fx:id="colId" prefWidth="60" text="ID" />
             <TableColumn fx:id="coProduit" prefWidth="92.00000762939453" text="IDProduit" />
-            <TableColumn fx:id="coProduit" prefWidth="96.79998779296875" text="Quantité" />
-            <TableColumn fx:id="colDate" prefWidth="119.20001220703125" text="Date" />
-            <TableColumn fx:id="colTotal" prefWidth="100" text="Prix (D)" />
-            <TableColumn fx:id="colFournisseur" prefWidth="88.79995727539062" text="IDFournisseur" />
-            <TableColumn fx:id="colEtat" prefWidth="79.2000732421875" text="État" />
+            <TableColumn fx:id="colquantite" prefWidth="96.79998779296875" text="Quantité" />
+            <TableColumn fx:id="colDate" prefWidth="124.79998779296875" text="Date" />
+            <TableColumn fx:id="colPrix" prefWidth="78.39996337890625" text="Prix (D)" />
+            <TableColumn fx:id="colFournisseur" prefWidth="84.79998779296875" text="IDFournisseur" />
+            <TableColumn fx:id="colDateReel" prefWidth="102.39990234375" text="Date de livraison" />
         </columns>
 
     </TableView>

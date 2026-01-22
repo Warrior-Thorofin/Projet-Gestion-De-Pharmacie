@@ -8,13 +8,13 @@
 
 <AnchorPane prefHeight="450" prefWidth="700" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.HistoriqueVenteController">
 
-    <Label layoutX="260" layoutY="20" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Historique des ventes" />
+    <Label layoutX="248.0" layoutY="22.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Historique des ventes" />
 
     <TableView fx:id="tableVentes" layoutX="30" layoutY="60" prefHeight="360" prefWidth="640">
         <columns>
-            <TableColumn fx:id="colId" prefWidth="78.39999198913574" text="ID Vente" />
-            <TableColumn fx:id="colProduit" prefWidth="107.19998931884766" text="IdUser" />
-            <TableColumn fx:id="colClient" prefWidth="160.0" text="NomProduit" />
+            <TableColumn fx:id="colId" prefWidth="78.39999198913574" text="IDVente" />
+            <TableColumn fx:id="colUsert" prefWidth="107.19998931884766" text="IdUser" />
+            <TableColumn fx:id="colproduit" prefWidth="160.0" text="NomProduit" />
             <TableColumn fx:id="colQuantite" prefWidth="104.0" text="Quantité" />
             <TableColumn fx:id="colTotal" prefWidth="74.39999389648438" text="Prix (D)" />
             <TableColumn fx:id="colDate" prefWidth="115.20001220703125" text="Date" />

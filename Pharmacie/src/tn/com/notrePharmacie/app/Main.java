@@ -1,4 +1,5 @@
-package application;
+package app;
+
 
 import java.io.IOException;
 
@@ -20,7 +21,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
     	
 
-    	Parent root= FXMLLoader.load(getClass().getResource("tst.fxml"));
+    	Parent root= FXMLLoader.load(getClass().getResource("/tn/com/notrePharmacie/view/tst.fxml"));
     	Scene scene = new Scene(root);
     	scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
